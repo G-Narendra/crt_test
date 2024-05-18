@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>EXPENCE TRACKER</title> 
+	<link rel="stylesheet" href="track.css" /> 
+</head> 
+<body> 
+	<div class="box"> 
+		<h1>EXPENCE TRACKER</h1> 
+		<form id="expense-form"> 
+		<input type="text"id="expense-name"placeholder="Expense Name"required/><br>
+		<input type="number"id="expense-amount"placeholder="Amount"required/><br>
+		<button type="submit">ADD EXPENCE</button> 
+		</form> 
+		<div class="expense-table"> 
+			<table> 
+			<thead> 
+				<tr> 
+				<th>PRODUCT NAME</th> 
+				<th>PRICE</th> 
+				<th>DELETE?</th> 
+			</tr> 
+			</thead> 
+			<tbody id="expense-list"></tbody> 
+			</table> 
+		<div class="total-amount"> 
+			<strong>Total:</strong> 
+			$<span id="total-amount">0</span> 
+		</div> 
+		</div> 
+	</div> 
+	<script src="track.js"></script> 
+</body> 
+</html>

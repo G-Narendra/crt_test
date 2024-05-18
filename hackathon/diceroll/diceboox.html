@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICE ROLL</title>
+    <link rel="stylesheet" href="diceroll.css">
+</head>
+<body>
+    <h1>ROLL THE DICE</h1>
+    <div id="box">
+    <p id="ans"></p>
+    <img id="image"src=""width="30%"height="auto"><br>
+    </div>
+    <script>
+    let para;
+    let num;
+    document.addEventListener('keydown',function(event){
+    num=Math.floor(Math.random()*6)+1;
+    para=document.getElementById("ans");
+    para.innerHTML="NUMBER IS : "+num; 
+    switch(num){
+        case 1:
+            document.getElementById("image").src="dice1.jpg";
+            break;
+        case 2:
+            document.getElementById("image").src="dice2.jpg";
+            break;
+        case 3:
+            document.getElementById("image").src="dice3.jpg";
+            break;
+        case 4:
+            document.getElementById("image").src="dice4.jpg";
+            break;
+        case 5:
+            document.getElementById("image").src="dice5.jpg";
+            break;
+        case 6:
+            document.getElementById("image").src="dice6.jpg";
+            break;
+        default:
+            break;
+        }
+    });
+    </script>
+</body>
+</html>

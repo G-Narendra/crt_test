@@ -1,0 +1,65 @@
+body { 
+    background-color:rgb(230, 243, 255);
+    color:black;
+    position:relative;
+} 
+.box{ 
+    width:500px;
+    height:500px;
+    margin:100px 550px 0px 550px;
+    border :3px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content :center;
+    align-items:center;   
+    box-shadow:5px 5px 30px rgb(57, 56, 55);
+} 
+h1{ 
+	text-align :center; 
+	text-decoration:underline;
+} 
+form{ 
+	display:flex; 
+    flex-direction: column;
+	justify-content:center;
+    align-items:center; 
+	margin-bottom :20px; 
+} 
+input{ 
+	padding:10px; 
+	border-radius:10px; 
+	outline:none; 
+} 
+button{ 
+	padding:10px 20px; 
+	background-color:#4caf50; 
+	color:white; 
+	border:2px solid green; 
+	 
+} 
+.expense-table{ 
+	 
+	
+	overflow:hidden; 
+	box-shadow:0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+table{ 
+	border:2px solid #3e2a2a;
+	width:100%; 
+
+} 
+th{ 
+	border:2px solid #3e2a2a;
+	padding: 10px; 
+	text-align: left; 
+} 
+td{ 
+	border:2px solid #3e2a2a;
+	padding:10px; 
+} 
+.total-amount{ 
+	border:2px solid #3e2a2a;
+	text-align: center;
+	padding:10px; 
+	 
+}
